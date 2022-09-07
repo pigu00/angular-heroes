@@ -1,0 +1,16 @@
+<h1>Resumen</h1>
+
+<p> {{ resumen }} </p>
+
+<ul *ngFor="let pelicula of peliculas">
+  <button (click)="showMovie(pelicula)">Mostrar Pelicula{{pelicula}}</button>
+</ul>
+
+<div class="contenedor-peliculas" *ngFor="let pelicula of peliculas">
+  <h3> {{ pelicula.nombre }} </h3>
+  <p> Director: {{ pelicula.director}} </p>
+  <p> Año: {{ pelicula.anio }} </p>
+  <button> Vista ✅ </button>
+  <button> Eliminar ❌ </button>
+
+</div>

@@ -1,0 +1,26 @@
+
+
+
+
+<h1>Heroes</h1>
+
+<ul>
+    <li *ngFor="let heroe of heroes">{{heroe}}</li>
+    
+</ul>
+
+
+
+<div>
+
+    <button (click)="deleteHeroe()">Borrar heroe</button>
+</div>
+
+<div *ngIf="heroeDeleted !== ''">
+    
+    heroe borrado: {{heroeDeleted}}
+</div>
+
+<!-- <div *ngIf="heroeDeleted; else noDeletedMsg">
+        heroe borrado: {{heroeDeleted}} 
+</div> -->

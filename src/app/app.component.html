@@ -2,3 +2,22 @@
 
 
 <app-saludar></app-saludar>
+
+<app-peliculas [resumen]="resumen" [peliculas]="peliculas"></app-peliculas>
+<app-peliculas [resumen]="resumen" (mostrarPeliculas)="showList($event)"></app-peliculas>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <app-header></app-header>
+    <br>
+    <hr>
+    <br>
+    <app-list></app-list>
+    <br>
+    <hr>
+    <br>
+    <app-footer></app-footer>
+  </div>
+</div>
