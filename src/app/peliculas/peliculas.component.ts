@@ -10,7 +10,7 @@ export class PeliculasComponent implements OnInit {
 	constructor() {}
 	ngOnInit(): void {}
 
-	showMovie(pelicula: string){
+	showMovie(pelicula: any){
 		console.log(pelicula)
 		this.showMovies.emit(pelicula)
 	}

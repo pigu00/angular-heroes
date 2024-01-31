@@ -14,7 +14,7 @@ export class AppComponent {
 		{ nombre: 'True Lies', anio: 1992, director: 'Cameron' },
 		{ nombre: 'Terminator', anio: 1982, director: 'Cameron' },
 	]
-	showList($event:string){
+	showList($event:any){
 		console.log($event)
 	}
 	public resumen: string = 'A continuación te vamos a mostrar la película.'
